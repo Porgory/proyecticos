@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora con JavaScript</title>
+    <link type="text/css" href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<header>Welcome to my first calculator</header>
+<div>
+    <p>Inserta los dos números que quieras operar</p>
+<input type="text" id="num1">
+<input type="text" id="num2">
+
+<p>Resultado: <span id="resultado">-</span></p>
+
+<button onclick="sumar()">sumar</button>
+<button onclick="restar()">restar</button>
+<button onclick="multiplicar()">multiplicar</button>
+<button onclick="dividir()">dividir</button>
+</div>
+
+
+<script src="calculadora.js"></script>
+<script>
+    function sumar() {
+        var num1 = parseFloat(document.getElementById('num1').value);
+        var num2 = parseFloat(document.getElementById('num2').value);
+        document.getElementById('resultado').innerHTML = suma(num1, num2);
+    }
+
+    function restar() {
+        var num1 = parseFloat(document.getElementById('num1').value);
+        var num2 = parseFloat(document.getElementById('num2').value);
+        document.getElementById('resultado').innerHTML = resta(num1, num2);
+    }
+
+    function multiplicar() {
+        var num1 = parseFloat(document.getElementById('num1').value);
+        var num2 = parseFloat(document.getElementById('num2').value);
+        document.getElementById('resultado').innerHTML = multiplicacion(num1, num2);
+    }
+
+    function dividir() {
+        var num1 = parseFloat(document.getElementById('num1').value);
+        var num2 = parseFloat(document.getElementById('num2').value);
+        document.getElementById('resultado').innerHTML = division(num1, num2);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+header{
+  background-color: bisque;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+body{
+  background-color: beige;
+}
+
+div {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px; /* Ajusta este valor para controlar el grado de redondez */
+  border: 2px solid black;
+  margin: 60px;
+}
+
+input{
+  border-radius: 10%;
+}
